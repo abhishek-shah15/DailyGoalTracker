@@ -1,0 +1,5 @@
+#!/bin/bash
+P=/sdcard/Android/data/com.creatoro.goals/cache/Failed/
+
+adb pull $P Failed/
+adb shell rm -r $P

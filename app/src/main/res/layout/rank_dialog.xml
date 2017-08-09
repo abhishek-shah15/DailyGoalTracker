@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_radius"
+
+    android:orientation="vertical">
+    <!--android:background="@drawable/main_radius"-->
+    <!--  "-->
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/main_radius"
+        android:padding="17.5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="5dp"
+
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="0.2"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:background="@mipmap/ic_launcher" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toEndOf="@+id/imageView"
+                        android:layout_toRightOf="@+id/imageView"
+
+                        android:text="SHARE YOUR EXPERIENCE"
+                        android:textColor="@color/cyan_700"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/msgtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Please share experience with us and others to review us or write a feedback on"
+                        android:textColor="#999da1" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/msgtext"
+                        android:layout_alignStart="@+id/msgtext"
+                        android:layout_below="@+id/msgtext"
+                        android:text="Google Play Store"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl1"
+        android:background="@drawable/back_radius"
+        android:gravity="center"
+        android:paddingBottom="2dp">
+
+
+        <Button
+            android:id="@+id/btn_nothanks"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_radius"
+            android:shadowColor="#aaacae"
+            android:shadowDx="6"
+            android:shadowDy="6"
+
+            android:text="NO THANKS"
+            android:textColor="#999da1"
+            android:textSize="5.0pt" />
+
+        <Button
+            android:id="@+id/btn_ratelater"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_radius"
+            android:shadowColor="#aaacae"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:text="RATE LATER"
+            android:textColor="#999da1"
+            android:textSize="5.0pt" />
+
+        <Button
+            android:id="@+id/btn_ratenow"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_radius_submit"
+            android:shadowColor="@color/cyan_700"
+
+            android:shadowDx="6"
+
+            android:shadowDy="6"
+            android:text="RATE NOW"
+            android:textColor="#ffffff"
+            android:textSize="5.0pt" />
+
+    </LinearLayout>
+
+</LinearLayout>
